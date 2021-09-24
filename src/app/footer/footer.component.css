@@ -1,0 +1,13 @@
+.bground{
+    background-color: rgb(198, 158, 255);
+}
+
+.bgcopy{
+    background-color: rgb(157, 112, 209);
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 12px;
+}
