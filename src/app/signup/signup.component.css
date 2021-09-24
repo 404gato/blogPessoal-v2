@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url('../../assets/img/cb438999b7802b0aab49bb0778b58d12.gif');
+  
+    min-height: 400px;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

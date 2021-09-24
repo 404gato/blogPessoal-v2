@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url('../../assets/img/47fb20dacd4740686bd7575a3451b53053d0e5f2r1-500-621_hq.gif');
+
+    min-height: 625px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
