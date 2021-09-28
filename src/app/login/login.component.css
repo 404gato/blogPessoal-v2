@@ -7,3 +7,86 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@font-face {
+    font-family: '04B';
+    src: url('../../assets/fonts/04B_03__.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arandelle';
+    src: url('../../assets/fonts/Arandelle.otf') format('opentype');
+}
+
+.fontpix{
+    font-family: '04B';
+    font-size: 8px;
+    text-transform: uppercase;
+}
+.arandelle{
+    font-family: 'Arandelle';
+    font-size: 80px;
+  }
+
+  .container-fluid{
+    position: relative;
+    background-image: url('../../assets/img/windpattern.png');
+    
+  }
+  .container {
+    position: relative;
+    width: 300px;
+    padding: 10px 30px;
+    background: rgb(198, 238, 243);
+    text-align: center;
+    border-radius: 100% 0% 0% 0% / 55% 0% 0% 0%;
+    border-bottom-left-radius:  35%;
+    border-bottom-right-radius: 40%;
+    box-shadow: -10px 0px 0px rgb(165, 226, 226);
+}
+
+/*.container .janna {
+    width: 300px;
+    position: absolute;
+    top: -120px;
+    right: -9%;
+    animation: animate 1s ease infinite alternate;
+    transition: all 0.3s ease;
+}*/
+
+/*.janna{
+    width: 10px;
+    height: auto;
+}*/
+
+  input {
+    border-radius: 12px;
+    border-width: 2px;
+    border-left-color: #1beabd;
+    border-top-color: #1beabd;
+    border-right-color: #10abff;
+    border-bottom-color: #10abff;
+}
+
+input:hover{
+    box-shadow: 0px 1px 5px rgb(42, 214, 214);
+}
+
+button {
+    border-radius: 12px;
+    background: linear-gradient(#1beabd, #10abff);
+}
+
+button:hover{
+    background: linear-gradient(#10abff, #1beabd);
+}
+
+a{
+    color: #21d3da;
+    text-decoration: none;
+}
+
+a:hover{
+    color: royalblue;
+}
+

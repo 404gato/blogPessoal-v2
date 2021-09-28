@@ -1,9 +1,76 @@
 #img-bg{
     background-image: url('../../assets/img/cb438999b7802b0aab49bb0778b58d12.gif');
   
-    min-height: 400px;
+    min-height: 430px;
   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+/*fontes*/
+
+@font-face {
+  font-family: '04B';
+  src: url('../../assets/fonts/04B_03__.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arandelle';
+  src: url('../../assets/fonts/Arandelle.otf') format('opentype');
+}
+
+.fontpix{
+  font-family: '04B';
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.fontaran{
+  font-family: 'Arandelle';
+  font-size: 80px;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  padding: 10px 30px;
+  background: #d4ebff;
+  text-align: center;
+  border-radius: 100% 0% 0% 0% / 55% 0% 0% 0%;
+  border-bottom-left-radius:  35%;
+  border-bottom-right-radius: 40%;
+  box-shadow: -10px 0px 0px rgb(202, 223, 247);
+}
+
+input {
+  border-radius: 12px;
+  border-width: 2px;
+  border-left-color: #b1d7f7;
+  border-top-color: #b1d7f7;
+  border-right-color: #e4a5f7;
+  border-bottom-color: #e4a5f7;
+}
+
+input:hover{
+  box-shadow: 0px 1px 5px rgb(42, 214, 214);
+}
+
+.bnorm {
+  border-radius: 12px;
+  background: linear-gradient(#caa9f0, #9ed3ff);
+  border: 2px;
+  border-color: royalblue;
+}
+
+.bnorm:hover{
+  background: linear-gradient(#9ed3ff, #ce98fa);
+}
+
+.bred{
+  border-radius: 12px;
+  background: linear-gradient(#f5713d, #ff0000);
+}
+
+.bred:hover{
+  background: linear-gradient(#ff0000, #f5713d);
+}
