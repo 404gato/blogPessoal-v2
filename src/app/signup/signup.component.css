@@ -1,11 +1,16 @@
 #img-bg{
     background-image: url('../../assets/img/cb438999b7802b0aab49bb0778b58d12.gif');
   
-    min-height: 430px;
+    min-height: 100%;
   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .container-fluid{
+    position: relative;
+    background-image: url('../../assets/img/windpatternCAD.png');
   }
 /*fontes*/
 
@@ -34,12 +39,12 @@
   position: relative;
   width: 400px;
   padding: 10px 30px;
-  background: #d4ebff;
+  background: #e5ddff;
   text-align: center;
   border-radius: 100% 0% 0% 0% / 55% 0% 0% 0%;
   border-bottom-left-radius:  35%;
   border-bottom-right-radius: 40%;
-  box-shadow: -10px 0px 0px rgb(202, 223, 247);
+  box-shadow: -10px 0px 0px rgb(219, 202, 247);
 }
 
 input {
