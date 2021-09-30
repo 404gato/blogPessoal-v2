@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mr-auto d-flex align-items-center">
         <li class="nav-item active">
-          <img src="https://i.imgur.com/Wj2RSur.png" alt ="imagem do user" class="img-fluid rounded-circle">
+          <img src="{{foto}}" width="50px" height="auto" alt ="imagem do user" class="img-fluid rounded-circle">
         </li>
         <li class="nav-item pl-2">
-          <p class="m-0 font-weight-bold ">nome do usuario</p>
+          <p class="m-0 font-weight-bold ">{{nome}}</p>
         </li>
         <li>
             <a href=""><img src="https://i.imgur.com/0o5ia7p.png" alt="edit"></a>
@@ -19,7 +19,7 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-            <a class="m-0 font-weight-bold ">sair</a>
+            <a (click)='sair()' class="m-0 font-weight-bold ">sair</a>
         </li>
      </ul>
     </div>
