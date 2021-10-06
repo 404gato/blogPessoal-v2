@@ -1,8 +1,8 @@
+import { environment } from './../../../environments/environment.prod';
+import { Router, ActivatedRoute } from '@angular/router';
+import { TemaService } from './../../service/tema.service';
+import { Tema } from './../../model/Tema';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Tema } from 'src/app/model/Tema';
-import { TemaService } from 'src/app/service/tema.service';
-import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-tema-delete',
@@ -20,14 +20,14 @@ export class TemaDeleteComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(){
+  ngOnInit() {
     if(environment.token == ''){
-      alert('A seção expirou, faça o login novamente')
-      this.router.navigate(['/login'])
+      this.router.navigate(['/entrar'])
     }
 
     this.idTema = this.route.snapshot.params['id']
     this.findByIdTema(this.idTema)
+
   }
 
   findByIdTema(id: number){
@@ -38,7 +38,7 @@ export class TemaDeleteComponent implements OnInit {
 
   apagar(){
     this.temaService.deleteTema(this.idTema).subscribe(()=>{
-      alert('Tema deletado')
+      alert('Tema apagado com sucesso!')
       this.router.navigate(['/tema'])
     })
   }

@@ -31,7 +31,7 @@ export class TemaService {
     return this.http.put<Tema>('https://alyenoid.herokuapp.com/tema', tema, this.token)
   }
 
-  deleteTema(id: number){
+  deleteTema(id: number) {
     return this.http.delete(`https://alyenoid.herokuapp.com/tema/${id}`, this.token)
   }
 }

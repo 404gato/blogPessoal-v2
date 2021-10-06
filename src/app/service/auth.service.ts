@@ -22,6 +22,10 @@ export class AuthService {
     return this.http.post<User>('https://alyenoid.herokuapp.com/credenciais/cadastrar', user)    
   }
 
+  getByIdUser(id: number): Observable<User>{
+    return this.http.get<User>(`https://alyenoid.herokuapp.com/u/usuario/${id}`)
+  }
+
   logado(){
     let ok: boolean = false
 
