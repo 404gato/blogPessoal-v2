@@ -19,9 +19,20 @@ export class PostagemService {
     return this.http.get<Postagem[]>('https://alyenoid.herokuapp.com/postagem', this.token)
   }
 
+  getByIdPostagem(id: number): Observable<Postagem>{
+    return this.http.get<Postagem>(`https://alyenoid.herokuapp.com/postagem/${id}`, this.token)
+  }
+
   postPostagem(postagem: Postagem) : Observable<Postagem>{
     return this.http.post<Postagem>('https://alyenoid.herokuapp.com/postagem', postagem, this.token)
   }
 
+  putPostagem(postagem: Postagem): Observable<Postagem>{
+    return this.http.put<Postagem>('https://alyenoid.herokuapp.com/postagem', postagem, this.token)
+  }
+
+  deletePostagem(id: number){
+    return this.http.delete(`https://alyenoid.herokuapp.com/postagem/${id}`, this.token)
+  }
   
 }
