@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
 
     if(environment.token == ''){
       alert('A seção expirou, faça o login novamente')
